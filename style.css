@@ -19,8 +19,14 @@ body{
   font-family: "Noto Serif Ahom", serif;
   font-weight: 400;
   font-style: normal;
+  transition: 5s ease-out;
 }
-
+.dark{
+  background-color: black;
+  background-image:none;
+  transition: 5s ease-in;
+  color:red;
+}
 .header{
   font-size:25px;
   display:flex;

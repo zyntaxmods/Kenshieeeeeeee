@@ -1,9 +1,21 @@
 var count = 0;
+function dark(){
+  document.body.classList.toggle("dark");
+  let kenshie = document.getElementById("kenshiejee");
+  kenshie.classList.toggle("dark")
+}
+function revert(){
+  document.body.classList.remove("dark");
+  let kenshie = document.getElementById("kenshiejee");
+  kenshie.classList.remove("dark")
+}
+var audio1 = document.getElementById("song1");
 alert("For better experience use dekstop site");
 var no = document.getElementById("no").addEventListener('click', function(){
   let yes = document.getElementById("yes");
   let btn = document.getElementById("no");
   let kenshie = document.getElementById("kenshie");
+  audio1.muted = false;
   count++;
   if(count == 1){
     btn.style.padding = "25px 65px";
@@ -22,6 +34,8 @@ var no = document.getElementById("no").addEventListener('click', function(){
     kenshie.src = "/gifs/cat2.gif";
     yes.style.transition = "1s";
     btn.style.transition = "1s";
+    audio1.play();
+    dark();
   }
   else if(count == 3){
     btn.style.padding = "15px 40px";
@@ -74,6 +88,8 @@ var no = document.getElementById("no").addEventListener('click', function(){
   }
 })
 let yes = document.getElementById("yes").addEventListener('click', function(){
+  revert();
+  audio1.muted = true;
   let no = document.getElementById("no");
   let compli = document.getElementById("jee");
   compli.style.display = "flex";
