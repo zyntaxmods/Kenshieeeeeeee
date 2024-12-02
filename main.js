@@ -1,4 +1,5 @@
 var count = 0;
+var yesCount = 0;
 function dark(){
   document.body.classList.toggle("dark");
   let kenshie = document.getElementById("kenshiejee");
@@ -88,18 +89,41 @@ var no = document.getElementById("no").addEventListener('click', function(){
   }
 })
 let yes = document.getElementById("yes").addEventListener('click', function(){
+  yesCount++;
   revert();
-  audio1.muted = true;
-  let no = document.getElementById("no");
-  let compli = document.getElementById("jee");
-  compli.style.display = "flex";
-  no.style.display = "none";
-  let msg = document.getElementById("kenshiejee").textContent = "YEHEY!!!kakwieififjfiejdieifi";
-  let kenshie = document.getElementById("kenshie");
-  kenshie.src = "/gifs/catride.gif"
-  const audio = document.getElementById("song");
-  audio.muted = false;
-  audio.play();
-  audio.loop = true;
-  alert("scroll down😣");
+  if(yesCount == 1 && count == 0){
+    let eme = document.getElementById("eme");
+    eme.style.display = "block";
+    let kenshie = document.getElementById("kenshie");
+    kenshie.src = "rizz.gif";
+    let msg = document.getElementById("kenshiejee");
+    msg.textContent = "I got you on the first try😎";
+    msg.classList.toggle("rafi");
+    let no = document.getElementById("no");
+    let compli = document.getElementById("jee");
+    compli.style.display = "flex";
+    compli.classList.toggle("rafi");
+    no.style.display = "none";
+    const audio = document.getElementById("song");
+    audio.src = "first.mp3";
+    audio.muted = false;
+    audio.play();
+    audio.loop = true;
+    alert("scroll down😣")
+  }
+  else{
+    let kenshie = document.getElementById("kenshie");
+    kenshie.src = "/gifs/catride.gif"
+    let msg = document.getElementById("kenshiejee").textContent = "YEHEY!!!kakwieififjfiejdieifi";
+    audio1.muted = true;
+    let no = document.getElementById("no");
+    let compli = document.getElementById("jee");
+    compli.style.display = "flex";
+    no.style.display = "none";
+    const audio = document.getElementById("song");
+    audio.muted = false;
+    audio.play();
+    audio.loop = true;
+    alert("scroll down😣");
+  }
 })
