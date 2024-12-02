@@ -92,6 +92,9 @@ let yes = document.getElementById("yes").addEventListener('click', function(){
   yesCount++;
   revert();
   if(yesCount == 1 && count == 0){
+    let yes = document.getElementById("yes");
+    yes.style.display = "none"
+    yes.disabled = true;
     let eme = document.getElementById("eme");
     eme.style.display = "block";
     let kenshie = document.getElementById("kenshie");
@@ -112,6 +115,8 @@ let yes = document.getElementById("yes").addEventListener('click', function(){
     alert("scroll down😣")
   }
   else{
+    let yes = document.getElementById("yes");
+    yes.style.display = "none"
     let kenshie = document.getElementById("kenshie");
     kenshie.src = "/gifs/catride.gif"
     let msg = document.getElementById("kenshiejee").textContent = "YEHEY!!!kakwieififjfiejdieifi";
