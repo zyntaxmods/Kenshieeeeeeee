@@ -19,7 +19,7 @@ body{
   );
   background-repeat:no-repeat;
   background-size:1000vh 1000vh;
-  font-family: "Noto Serif Ahom", serif;
+  font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
   transition: 5s ease-out;
@@ -27,7 +27,7 @@ body{
 .dark{
   background-color: black;
   background-image:none;
-  transition: 5s ease-in;
+  transition: 1s ease-out;
   color:red;
 }
 .ugh{

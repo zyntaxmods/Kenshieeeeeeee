@@ -100,7 +100,7 @@ let yes = document.getElementById("yes").addEventListener('click', function(){
     let kenshie = document.getElementById("kenshie");
     kenshie.src = "rizz.gif";
     let msg = document.getElementById("kenshiejee");
-    msg.textContent = "I got you on the first try😎";
+    msg.textContent = "First try, got you!😎";
     msg.classList.toggle("rafi");
     let no = document.getElementById("no");
     let compli = document.getElementById("jee");
@@ -119,7 +119,7 @@ let yes = document.getElementById("yes").addEventListener('click', function(){
     yes.style.display = "none"
     let kenshie = document.getElementById("kenshie");
     kenshie.src = "/gifs/catride.gif"
-    let msg = document.getElementById("kenshiejee").textContent = "YEHEY!!!kakwieififjfiejdieifi";
+    let msg = document.getElementById("kenshiejee").textContent = "I knew it! You’d say yes!";
     audio1.muted = true;
     let no = document.getElementById("no");
     let compli = document.getElementById("jee");
